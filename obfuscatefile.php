@@ -8,7 +8,7 @@ try
     require "class.obfuscator.php";
 
     //Define source file path
-    $fullfilename_source = "F:\\Dev\\Dronifion\\e-wallet\\dev\\Woo\\dronifion-woo-linepay\\Obfuscation\\dronifion-woo-linepay.php";
+    $fullfilename_source = "F:\\Dev\\functions.php";
 
     //Open file for reading
     $handle_source = fopen($fullfilename_source, 'r') or die("file doesnt exist");
@@ -30,7 +30,7 @@ try
     }
 
     //Define a target file
-    $fullfilename_target = 'F:\\Dev\\Dronifion\\e-wallet\\dev\\Woo\\dronifion-woo-linepay\\Obfuscation\\obfuscated-dronifion-woo-linepay.php';
+    $fullfilename_target = 'F:\\Dev\\obfuscated-functions.php';
 
     //Write to the target file
     $handle_target = fopen($fullfilename_target, 'w') or die('Cannot open file:  '.$fullfilename_target);
